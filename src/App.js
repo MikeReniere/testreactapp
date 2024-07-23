@@ -1,6 +1,9 @@
 import './App.css';
 import Car from './Car'
 import Car2 from './Car2'
+import StateTest from './StateTest.js'
+import TaskApp from './TaskApp.js'
+import TaskAppReducer from './TaskAppReducer.js'
 
 function App() {
   return (
@@ -13,10 +16,13 @@ function App() {
       <div className="MyButton">
       <MyFirstButton/>
       <Football />
-      <App />
+      {/* <App /> */}
       <Car/>
       <Car2/>
-      {/* <Car color = "red"/> */}
+      <Car3 color = "red"/>
+      <StateTest/>
+      <TaskApp/>
+      {/* <TaskAppReducer/> */}
       </div>
     </div>
   );
@@ -32,9 +38,9 @@ function clickMe() {
   alert("aaaa")
 }
 
-// function Car(props){
-//   return <h2> this is my car function component with color {props.color} </h2>
-// }
+function Car3(props){
+  return <h2> this is my car function component with color {props.color} </h2>
+}
 
 
 function Football() {

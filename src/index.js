@@ -2,19 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Car from './Car'
-import Car2 from './Car2'
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//     <Car/>
-//     <Car2/>
-//     </React.StrictMode>
-// );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <App />
+    </React.StrictMode>
+);
 // newVar.render(
 //   <Car/>
 // )
