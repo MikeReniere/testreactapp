@@ -24,8 +24,15 @@
   color: white;
 }
 
+.MyHeader { 
+  color: brown;
+}
 .App-link {
   color: #61dafb;
+}
+
+.MyButton {
+  color: #cdfb61;
 }
 
 @keyframes App-logo-spin {

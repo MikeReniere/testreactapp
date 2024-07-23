@@ -3,13 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Car from './Car'
+import Car2 from './Car2'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+    <Car/>
+    <Car2/>
+    </React.StrictMode>
 );
+// newVar.render(
+//   <Car/>
+// )
+
+// root.render(<Car />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

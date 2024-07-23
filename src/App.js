@@ -1,25 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="MyHeader">
+
+        <h1> This is my header</h1>
+
       </header>
+      <div className="MyButton">
+      <MyFirstButton/>
+      <Football />
+      <Car color = "red"/>
+      </div>
     </div>
   );
 }
 
+function MyFirstButton() {
+  return (
+    <button onClick={clickMe}>click me to change color</button>
+  )
+}
+
+function clickMe() {
+  alert("aaaa")
+}
+
+function Car(props){
+  return <h2> this is my car function component with color {props.color} </h2>
+}
+
+
+function Football() {
+  const shoot = () => {
+    alert("shotted");
+  }
+
+  return (
+    <button onClick={shoot}>kick ball pls</button>
+  );
+}
+
+
 export default App;
+
