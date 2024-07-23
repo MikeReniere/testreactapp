@@ -1,4 +1,6 @@
 import './App.css';
+import Car from './Car'
+import Car2 from './Car2'
 
 function App() {
   return (
@@ -11,7 +13,10 @@ function App() {
       <div className="MyButton">
       <MyFirstButton/>
       <Football />
-      <Car color = "red"/>
+      <App />
+      <Car/>
+      <Car2/>
+      {/* <Car color = "red"/> */}
       </div>
     </div>
   );
@@ -27,9 +32,9 @@ function clickMe() {
   alert("aaaa")
 }
 
-function Car(props){
-  return <h2> this is my car function component with color {props.color} </h2>
-}
+// function Car(props){
+//   return <h2> this is my car function component with color {props.color} </h2>
+// }
 
 
 function Football() {
