@@ -10,6 +10,7 @@ import Form from './Form.js';
 
 import Goal from './Goal.js'
 import TodosApp from './ToDosApp.js';
+import Accordion from './Accordian.js';
 function App() {
   return (
     <div className="App">
@@ -35,6 +36,7 @@ function App() {
       </div>
       <Form/>
       <TodosApp/>
+      <Accordion/>
       <Goal isGoal={false} />
       <Goal isGoal={true} />
       
