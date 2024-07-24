@@ -5,6 +5,7 @@ import StateTest from './StateTest.js'
 import TaskApp from './TaskApp.js'
 import TaskAppReducer from './TaskAppReducer.js'
 
+import Goal from './Goal.js'
 function App() {
   return (
     <div className="App">
@@ -16,13 +17,14 @@ function App() {
       <div className="MyButton">
       <MyFirstButton/>
       <Football />
-      {/* <App /> */}
       <Car/>
       <Car2/>
       <Car3 color = "red"/>
       <StateTest/>
       <TaskApp/>
       {/* <TaskAppReducer/> */}
+      <Goal isGoal={false} />
+      <Goal isGoal={true} />
       </div>
     </div>
   );
@@ -52,6 +54,7 @@ function Football() {
     <button onClick={shoot}>kick ball pls</button>
   );
 }
+
 
 
 export default App;

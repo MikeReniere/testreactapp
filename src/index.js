@@ -11,9 +11,6 @@ root.render(
     <App />
     </React.StrictMode>
 );
-// newVar.render(
-//   <Car/>
-// )
 
 // root.render(<Car />);
 
