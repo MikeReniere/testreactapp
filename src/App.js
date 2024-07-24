@@ -4,8 +4,12 @@ import Car2 from './Car2'
 import StateTest from './StateTest.js'
 import TaskApp from './TaskApp.js'
 import TaskAppReducer from './TaskAppReducer.js'
+import StatusBar from './StatusBar.js'
+import StatusBar2 from './StatusBar2.js'
+import Form from './Form.js';
 
 import Goal from './Goal.js'
+import TodosApp from './ToDosApp.js';
 function App() {
   return (
     <div className="App">
@@ -16,16 +20,24 @@ function App() {
       </header>
       <div className="MyButton">
       <MyFirstButton/>
+      </div>
       <Football />
       <Car/>
       <Car2/>
       <Car3 color = "red"/>
       <StateTest/>
       <TaskApp/>
-      {/* <TaskAppReducer/> */}
+      <p>below is a task app created using a task reducer</p>
+      <TaskAppReducer/>
+      <StatusBar/>
+      <div id="taskbar_customhook">
+      <StatusBar2/>
+      </div>
+      <Form/>
+      <TodosApp/>
       <Goal isGoal={false} />
       <Goal isGoal={true} />
-      </div>
+      
     </div>
   );
 }
