@@ -16,6 +16,7 @@ function Task({task, onChange, onDelete}) {
   const [isEditing, setIsEditing] = useState(false);
   let taskContent;
   if (isEditing) {
+    debugger;
     taskContent = (
       <>
         <input

@@ -11,6 +11,8 @@ import Form from './Form.js';
 import Goal from './Goal.js'
 import TodosApp from './ToDosApp.js';
 import Accordion from './Accordian.js';
+import TestStyledButton from './TestStyledButton.js';
+
 function App() {
   return (
     <div className="App">
@@ -31,12 +33,24 @@ function App() {
       <p>below is a task app created using a task reducer</p>
       <TaskAppReducer/>
       <StatusBar/>
+
+      <p>this uses custom hooks to </p>
       <div id="taskbar_customhook">
       <StatusBar2/>
       </div>
+
+      <p>this uses a custom hook for the components</p>
+      <p>also shows how using custom hooks doesnt link the states together</p>
       <Form/>
+
+      <p>this uses an external store to pull todos from</p>
       <TodosApp/>
+      
+      <p>Example of states being linked together, when one is open, the other closes</p>
       <Accordion/>
+
+      <p>styled button example</p>
+      <TestStyledButton/>
       <Goal isGoal={false} />
       <Goal isGoal={true} />
       
